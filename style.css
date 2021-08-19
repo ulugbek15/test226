@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header{
+    background-color: gold;
+}
+.header__nav{
+    padding: 15px 0px;
+}
+.header__list{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.header__item{
+    margin-right: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.header__item:hover{
+    background-color: yellow;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.main__section{
+    height: 100vh;
+}
+.section-1{
+    color: #fff;
+    background-color: teal;
+}
+.section-2{
+    color: #fff;
+    background-color: tomato;
+}
+.section-3{
+    color: #fff;
+    background-color: skyblue;
+}
+.section-4{
+    color: #fff;
+    background-color: rgb(196, 204, 204);
+}
+.section-5{
+    color: #fff;
+    background-color: grey;
+}
+.section-1__sub-title{
+    font-size: 38px;
+    margin: 25px 0px;
+}
+.section-1__text{
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+}
+section-1__img{
+    position: absolute;
+}
+.section-1__text::before{
+    margin-right: 10px;
+    transform: translateY(2px);
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+/* .section-1__text::after{
+    bottom: 0;
+    position: absolute;
+    display: inline-block;
+    background-color: tomato;
+    content: "";
+    background-image: url('http://picsum.photos/50');
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+} */
+.costum-radio{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 3px solid tomato;
+    border-radius: 50%;
+}
+.radio{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.radio:checked + .costum-radio{
+    border: 3px solid #fff;
+    box-shadow: inset 0px 0px 3px 2px rgba(18, 231, 89, 0.897);
+}
+/* .img-1{
+    max-width: 100%;
+    width: 500px;
+}
+.img-2{
+    max-width: 100%;
+    width: 250px;
+} */
+/* .box{
+    background-color: gold;
+}
+.box  p{
+    background-color: blue;
+} */
+input{
+    padding: 25px;
+    font-size: 20px;
+    outline: none;
+}
+/* input:focus{
+    border: 3px solid red;
+}
+input:active{
+    border: 3px solid green;
+} */
+.modal{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal--active{
+    /* display: flex; */
+}
